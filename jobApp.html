@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        #head_div {
+            background-color: maroon;
+            height: 25px
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .indent{
+            padding-right: 50px;
+        }
+        #tiny-text{
+            font-size: 5px;
+        }
+        input{
+            height: 25px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .myDiv{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div id="head_div"></div>
+        <div>
+            <h1 style="text-align: center; font-weight:bolder;" >Job Application</h1>
+        </div>
+        <div>
+            <div>
+                <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Personal Information</h2>
+            </div>
+            <div>
+                <label style="padding-right: 70px;">Name</label>
+                <input type="text" id="fname" placeholder="First Name">
+                <input type="text" id="lname" placeholder="Last Name">
+            </div>
+            <br>
+            <div>
+                <label for="email" style="padding-right: 72px;">Email</label>
+                <input type="text" id="fname" placeholder="user@example.com">
+            </div>   
+            <br>
+            <div>
+                <label for="education" style="padding-right: 40px;">Education</label>
+                <select style="height: 20px; width: 200px;" id="uni" name="university">
+                    <option value="fastu">Please Choose</option>
+                    <option value="fastu">FAST-NUCES</option>
+                    <option value="pucit">PUCIT</option>
+                    <option value="lumsu">LUMS</option>
+                    <option value="nustu">NUST</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label style="padding-right: 50px;" for="resume">Resume</label>
+                <input type="file" id="fileInput" name="fileInput">
+            </div>
+            <br>
+            <div>
+                <label style="padding-right: 50px;" for="address">Address</label>
+                <input type="text" id="address1" placeholder="Address 1">
+                <input type="text" id="address2" placeholder="Address 2">
+            </div>
+            <div>
+                <label style="padding-right: 110px;"></label>
+                <select style="height: 20px; width: 200px; margin-bottom: 10px;" id="country" name="country">
+                    <option value="" disabled selected>Select a country</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+            <div>
+                <label style="padding-right: 110px;"></label>
+                <input type="text" id="city" placeholder="City" style="width: 35%;">
+                <input type="text" id="state" placeholder="State" style="width: 15%;">
+                <input type="text" id="zip" placeholder="ZipCode" style="width: 15%;">
+            </div>
+            <br>
+            <div>
+                <label style="padding-right: 3px;" for="pnum">Phone Number</label>
+                <input style="width: 10%;" type="tel" id="pnum" name="phoneNum">
+                <input style="width: 50%;" type="tel" id="pnum2" name="phoneNum2">
+            </div>
+            <br>
+            <div>
+                <label style="padding-right: 50px;" for="hobbies">What are your hobbies?</label>
+                <br>
+                <input type="text" id="hobbies1" style="width: 100%;">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Precious/Current Employment Details</h2>
+            </div>
+            <br>
+            <div>
+                <label for="Company Name" style="padding-right: 2px;">Company Name</label>
+                <input type="text" id="fname" style="width: 70%;">
+            </div>
+            <br>
+            <div>
+                <label for="jTitle" style="padding-right: 60px;" >Job Title</label>
+                <input type="text" id="jTit" style="width: 70%;">
+            </div>   
+            <br>
+            <div>
+                <label for="experience" style="padding-right: 70px; width: 110px ">Tenure</label>
+                <input type="text" for="experience" style="width: 70%;" >
+            </div>
+            <br>
+        </div> 
+        <div>
+            <div>
+                <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Reference #1</h2>
+            </div>
+            <div>
+                <label for="name" style="padding-right: 75px; ">Name</label>
+                <input type="text" id="name" style="width: 70%;">
+            </div>
+            <div>
+                <label for="Phone" style="padding-right: 72px;">Phone</label>
+                <input type="tel" id="contact" style="width: 70%;">
+            </div>
+        </div>  
+        <br>
+        <div>
+            <div>
+                <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Reference #2</h2>
+            </div>
+            <div>
+                <label for="name" style="padding-right: 75px; ">Name</label>
+                <input type="text" id="name" style="width: 70%;">
+            </div>
+            <div>
+                <label for="Phone" style="padding-right: 72px;">Phone</label>
+                <input type="tel" id="contact" style="width: 70%;">
+            </div>
+        </div>  
+        <br>
+        <div class="myDiv">
+            <button type="submit" style="text-align: center; background-color: maroon; font-size:x-large; color: white; padding-right: 25px; padding-left: 25px; padding-top: 5px; padding-bottom: 5px;">Apply</button>
+        </div>
+    </form>
+
+</body>
+</html>
