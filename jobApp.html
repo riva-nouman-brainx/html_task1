@@ -19,9 +19,11 @@
             font-size: 5px;
         }
         input{
-            height: 25px;
-            margin-bottom: 10px;
+            height: 30px;
+            /* margin-bottom: 10px; */
             margin-right: 10px;
+            border: 2px solid pink;
+            border-radius: 6px;
         }
         .form-container {
             display: flex;
@@ -30,6 +32,10 @@
         .myDiv{
             text-align: center;
         }
+        label {
+            font-weight: bold;
+        }
+        
 
     </style>
 </head>
@@ -44,19 +50,19 @@
                 <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Personal Information</h2>
             </div>
             <div>
-                <label style="padding-right: 70px;">Name</label>
-                <input type="text" id="fname" placeholder="First Name" required>
-                <input type="text" id="lname" placeholder="Last Name" required>
+                <label style="padding-right: 110px;">Name</label>
+                <input type="text" id="fname" placeholder="First Name" style="width: 35%;" required>
+                <input type="text" id="lname" placeholder="Last Name" style="width: 35%;" required>
             </div>
             <br>
             <div>
-                <label for="email" style="padding-right: 72px;">Email</label>
-                <input type="text" id="fname" placeholder="user@example.com" required>
+                <label for="email" style="padding-right: 112px;">Email</label>
+                <input type="text" id="fname" placeholder="user@example.com" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" style="width: 55%;" required>
             </div>   
             <br>
             <div>
-                <label for="education" style="padding-right: 40px;">Education</label>
-                <select style="height: 20px; width: 200px;" id="uni" name="university" required>
+                <label for="education" style="padding-right: 80px;">Education</label>
+                <select style="height: 20px; width: 200px;" id="uni" name="university" style="width: 100%;" required>
                     <option value="fastu">Please Choose</option>
                     <option value="fastu">FAST-NUCES</option>
                     <option value="pucit">PUCIT</option>
@@ -66,18 +72,20 @@
             </div>
             <br>
             <div>
-                <label style="padding-right: 50px;" for="resume">Resume</label>
+                <label style="padding-right: 90px;" for="resume">Resume</label>
                 <input type="file" id="fileInput" name="fileInput" required>
             </div>
             <br>
             <div>
-                <label style="padding-right: 50px;" for="address">Address</label>
-                <input type="text" id="address1" placeholder="Address 1" required>
-                <input type="text" id="address2" placeholder="Address 2" required>
+                <label style="padding-right: 90px;" for="address">Address</label>
+                <input type="text" id="address1" placeholder="Address 1" style="width: 40%;" required>
+                <br>
+                <br>
+                <input type="text" id="address2" placeholder="Address 2" style="width: 40%; margin-left: 158px;" required>
             </div>
+            <br>
             <div>
-                <label style="padding-right: 110px;"></label>
-                <select style="height: 20px; width: 200px; margin-bottom: 10px;" id="country" name="country" required>
+                <select style="height: 20px; width: 68%; margin-bottom: 10px; margin-left: 155px;" id="country" name="country"  required>
                     <option value="" disabled selected>Select a country</option>
                     <option value="usa">USA</option>
                     <option value="canada">Canada</option>
@@ -85,17 +93,16 @@
                     <option value="australia">Australia</option>
                 </select>
             </div>
-            <div>
-                <label style="padding-right: 110px;"></label>
-                <input type="text" id="city" placeholder="City" style="width: 35%;" required>
-                <input type="text" id="state" placeholder="State" style="width: 15%;" required>
-                <input type="text" id="zip" placeholder="ZipCode" style="width: 15%;" required>
+            <div style="margin-left: 155px;">
+                <input type="text" id="city" placeholder="City" style="width: 20%;" required>
+                <input type="text" id="state" placeholder="State" style="width: 5%;" required>
+                <input type="text" id="zip" placeholder="ZipCode" style="width: 5%;" required>
             </div>
             <br>
             <div>
                 <label style="padding-right: 3px;" for="pnum">Phone Number</label>
-                <input style="width: 10%;" type="tel" id="pnum" name="phoneNum" required>
-                <input style="width: 50%;" type="tel" id="pnum2" name="phoneNum2" required>
+                <input style="width: 10%; margin-left: 35px;" type="tel" id="pnum" name="phoneNum" pattern="\d{2}" required>
+                <input style="width: 60%;" type="tel" id="pnum2" name="phoneNum2" pattern="\d{10}" required>
             </div>
             <br>
             <div>
@@ -110,17 +117,17 @@
             </div>
             <br>
             <div>
-                <label for="Company Name" style="padding-right: 2px;">Company Name</label>
+                <label for="Company Name" style="padding-right: 35px;">Company Name</label>
                 <input type="text" id="fname" style="width: 70%;" required>
             </div>
             <br>
             <div>
-                <label for="jTitle" style="padding-right: 60px;" >Job Title</label>
+                <label for="jTitle" style="padding-right: 90px;" >Job Title</label>
                 <input type="text" id="jTit" style="width: 70%;" required>
             </div>   
             <br>
             <div>
-                <label for="experience" style="padding-right: 70px; width: 110px ">Tenure</label>
+                <label for="experience" style="padding-right: 100px; width: 110px ">Tenure</label>
                 <input type="text" for="experience" style="width: 70%;" required>
             </div>
             <br>
@@ -130,11 +137,12 @@
                 <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Reference #1</h2>
             </div>
             <div>
-                <label for="name" style="padding-right: 75px; ">Name</label>
+                <label for="name" style="padding-right: 105px; ">Name</label>
                 <input type="text" id="name" style="width: 70%;" required>
             </div>
+            <br>
             <div>
-                <label for="Phone" style="padding-right: 72px;">Phone</label>
+                <label for="Phone" style="padding-right: 100px;">Phone</label>
                 <input type="tel" id="contact" style="width: 70%;" required>
             </div>
         </div>  
@@ -144,11 +152,12 @@
                 <h2 style="text-align: left; font-weight:bolder; color: maroon;" >Reference #2</h2>
             </div>
             <div>
-                <label for="name" style="padding-right: 75px; ">Name</label>
+                <label for="name" style="padding-right: 105px; ">Name</label>
                 <input type="text" id="name" style="width: 70%;" required>
             </div>
+            <br>
             <div>
-                <label for="Phone" style="padding-right: 72px;">Phone</label>
+                <label for="Phone" style="padding-right: 100px;">Phone</label>
                 <input type="tel" id="contact" style="width: 70%;" required>
             </div>
         </div>  
